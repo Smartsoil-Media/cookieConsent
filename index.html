@@ -13,7 +13,9 @@
   <body>
     <main>
       <section class="section-container">
-        <h1>This is the most important thing you will ever read!</h1>
+        <h1 id="changing-header-text">
+          This is the most important thing you will ever read!
+        </h1>
 
         <ul>
           <li class="li-green">💰 Land a job with a 6 figure salary</li>
@@ -38,7 +40,7 @@
     </main>
     <div class="modal" id="modal">
       <div class="close-modal-btn-container">
-        <button class="modal-close-btn" id="modal-close-btn">X</button>
+        <button class="modal-close-btn" id="modal-close-btn" disabled>X</button>
       </div>
       <div class="modal-inner" id="modal-inner">
         <h2 id="main-title">We ❤️ Your Data!</h2>
@@ -62,9 +64,11 @@
             placeholder="gibmeyourdata@gmail.com"
             required
           />
-          <div class="button-container">
+          <div class="button-container" id="button-container">
             <button class="modal-btn" type="submit">Accept</button>
-            <button class="modal-btn" type="button">Decline</button>
+            <button class="modal-btn" type="button" id="decline-btn">
+              Decline
+            </button>
           </div>
         </form>
       </div>

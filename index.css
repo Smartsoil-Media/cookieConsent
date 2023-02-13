@@ -156,8 +156,16 @@ input{
 }
 
 .button-container {
-    width: 100%;
+    margin-top: 10px;
+    padding: 8px 16px;
     display: flex;
     justify-content: center;
-    padding: 20px 0 0 0;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+#user-name, #email-input {
+    font-size: 18px;
 }
